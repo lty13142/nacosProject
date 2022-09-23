@@ -1,0 +1,18 @@
+server:
+  port: 8050
+
+spring:
+  application:
+    name: orderService
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.35.21.146:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&failOverReadOnly=false&pinGlobalTxToPhysicalConnection=true
+    username: root
+    password: root
+logging:
+  level:
+    com.lty.order.sys.mapper: debug
